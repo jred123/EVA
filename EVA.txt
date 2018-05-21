@@ -1,0 +1,36 @@
+<--Composer-->
+composer global require "laravel/installer"
+composer create-project --prefer-dist laravel/laravel EVA "5.4.*"  // solo si quieren crear desde cero
+<--Composer-->
+<--GIT-->
+git config --global user.name "John Doe"  		//poner y cambiar nombre
+git config --global user.email exmaple@gmail.com	//poner y cambiar correo
+git config --global color.ui true			//ilumine de distitnos colores los resultados
+git clone https://github.com/direccion			//copia un proyecto de github en tu pc
+git branch nombreRama					//crea una nueva rama
+git branch 						//muestra todas las ramas
+git checkout nombre de rama				//cambia a una 
+git add	.						//agrega todos los archivos a al monitoreo
+git commit -m "mensaje"					//sube la rama a guarda los cambios
+git push origin rama					//sube la rama a github
+git pull origin master					//actualiza la rama, necesaria todo el tiempo
+<--GIT-->
+
+<--Laravel-->
+crean una carpeta donde quieren que se ubique
+cd carpeta
+composer install
+//Modificamos el nombre del archivo .env.example. por .env y agregamos nuestras credenciales.
+
+<--Base de Datos-->
+ubicacion C:\xampp\mysql\bin
+mysql -u root -p
+CREATE USER 'eva'@'localhost' IDENTIFIED BY 'Karn123*';
+GRANT ALL PRIVILEGES ON * . * TO 'eva'@'localhost';
+FLUSH PRIVILEGES;
+<--Base de Datos-->
+
+php artisan migrate
+composer update
+php artisan serve
+<--Laravel-->
